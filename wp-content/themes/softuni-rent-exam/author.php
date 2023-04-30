@@ -5,8 +5,8 @@
 <p>The content of this page is served by the <strong>author</strong> template. Your name is <?php the_author(); ?>. Have a good day.</p>
 
 <ul class="properties-listing">
-	<?php if (have_posts()) : ?>
-		<?php while (have_posts()) : the_post(); ?>
+	<?php if ( have_posts() ) : ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/post', 'item' ); ?>
 

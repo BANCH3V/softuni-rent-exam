@@ -6,7 +6,7 @@
             <span class="meta-total-area">
                 <?php
                 $author_id = get_the_author_meta( 'ID' );
-                $author_archive_link = get_author_posts_url($author_id);
+                $author_archive_link = get_author_posts_url( $author_id );
                 ?>
                 <a href="<?php echo $author_archive_link; ?>"><?php the_author(); ?></a>
             </span>

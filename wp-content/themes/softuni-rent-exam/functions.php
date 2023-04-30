@@ -11,6 +11,9 @@ function softuni_assets() {
 add_action( 'wp_enqueue_scripts', 'softuni_assets' );
 
 
+/**
+ * This function adds menu to the theme
+ */
 function softuni_register_nav_menu(){
     register_nav_menus( array(
         'primary_menu' => __( 'Primary Menu Name', 'softuni-rent' ),
