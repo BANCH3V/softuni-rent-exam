@@ -1,8 +1,5 @@
 <footer class="site-footer">
-    <p>&copy; Copyright <?php echo date('Y') ?> | Developer links:
-        <a href="/#">Edits</a>,
-        <a href="#">Home</a>,
-        <a href="#">Single</a>
+    <p><?php echo get_bloginfo( 'title' ) ?>, Copyright <?php echo date('Y') ?> | Developer links:
     </p>
 </footer>
 </div>
