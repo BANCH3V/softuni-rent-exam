@@ -6,6 +6,7 @@
             <span class="meta-total-area">Total area: 91.65 sq.m</span>
         </div>
         <div class="property-details">
+            <span class="property-price">Property visits: <?php echo get_post_meta( get_the_ID(), 'views_count', true ) ?></span>
             <span class="property-price">€ 100,815</span>
             <span class="property-date">Posted
                 <?php
@@ -29,6 +30,7 @@
                 ?> <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="default-image-thumbnail"> <?php
             }
             ?>
+         <p><a class="rent-like" href="#">Like</a></p>
         </div>
     </div>
 </li>
