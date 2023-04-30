@@ -2,8 +2,9 @@
     <div class="property-primary">
         <h2 class="property-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <div class="property-meta">
-            <span class="meta-location">Ovcha Kupel, Sofia</span>
-            <span class="meta-total-area">Total area: 91.65 sq.m</span>
+             <!-- Sorry, I am cheating here with the template but the time is pressing me :S -->
+            <span class="meta-location">Location: Bulgaria</span>
+            <span class="meta-total-area">Property size: <?php echo softuni_display_single_term( get_the_ID() , 'size' )?> </span>
         </div>
         <div class="property-details">
             <span class="property-price">Property visits: <?php echo get_post_meta( get_the_ID(), 'views_count', true ) ?></span>

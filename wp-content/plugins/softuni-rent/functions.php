@@ -56,3 +56,26 @@ function softuni_update_rent_views_count( $post_id = 0 ) {
         update_post_meta( $post_id, 'views_count', 1 );
     }
 }
+
+
+/**
+ * Displays single post term
+ */
+
+ function softuni_display_single_term( $post_id, $taxonomy ) {
+
+    if ( empty( $post_id ) || empty( $taxonomy ) ) {
+        return;
+    }
+
+    $terms = get_the_terms( $post_id, $taxonomy );
+
+    $output = '';
+    if ( ! empty( $terms ) && is_array( $terms ) ) {
+        foreach( $terms as $term ) {
+            $output .= $term->name;
+        }
+    }
+
+    return $output;
+}
