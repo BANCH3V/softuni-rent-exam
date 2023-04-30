@@ -2,7 +2,7 @@
 
 <?php the_archive_title(); ?>
 
-<p>The content of this page is served by the <strong>main archive</strong> template.</p>
+<p>The content of this page is served by the <strong>date</strong> template. Todays date <?php echo date( 'd.m.Y' ); ?>. Have a good day.</p>
 
 <ul class="properties-listing">
 	<?php if (have_posts()) : ?>
